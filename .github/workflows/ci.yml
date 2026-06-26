@@ -1,5 +1,11 @@
 name: CI
 
+# Polyrepo CI: aec-ifc-export depends on the aec-schema JSON-Schema contract.
+# Locally the repos sit side-by-side and we use `pip install -e ../aec-schema`.
+# CI recreates that layout by checking out this repo and the contract repo into
+# sibling paths, with the contract PINNED to tag v0.1.0 (see aec-schema ADR).
+# Public repos -> no PAT needed for the second checkout.
+
 on:
   push:
     branches: [main]
@@ -13,22 +19,38 @@ jobs:
         python-version: ["3.11", "3.12"]
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout aec-ifc-export
+        uses: actions/checkout@v4
+        with:
+          path: aec-ifc-export
+
+      - name: Checkout aec-schema contract (pinned)
+        uses: actions/checkout@v4
+        with:
+          repository: ichbinlucaskim/aec-schema
+          ref: v0.1.0
+          path: aec-schema
 
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
 
-      - name: Install aec-schema
+      # Order matters: aec-schema is not on PyPI, so the editable contract must be
+      # in the env before installing aec-ifc-export (lists aec-schema>=0.1.0).
+      - name: Install aec-schema (contract, pinned v0.1.0)
+        working-directory: aec-ifc-export
         run: pip install -e ../aec-schema
 
       - name: Install aec-ifc-export
         # ifcopenshell ships PyPI wheels for 0.8.x (CPython 3.11/3.12)
+        working-directory: aec-ifc-export
         run: pip install -e ".[dev]"
 
       - name: Lint
+        working-directory: aec-ifc-export
         run: ruff check src/ tests/
 
       - name: Test
+        working-directory: aec-ifc-export
         run: python -m pytest tests/ -v
