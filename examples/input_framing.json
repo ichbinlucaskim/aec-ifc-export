@@ -1,0 +1,602 @@
+{
+  "panels": {
+    "panel-000": {
+      "schema_version": "0.1.0",
+      "id": "panel-000",
+      "parent_wall": "wall-000",
+      "start": {
+        "x": 0,
+        "y": 0
+      },
+      "end": {
+        "x": 3000,
+        "y": 0
+      },
+      "length": 3000,
+      "height": 2438,
+      "openings": [
+        "window_0"
+      ],
+      "panel_type": "exterior",
+      "load_bearing": true
+    },
+    "panel-001": {
+      "schema_version": "0.1.0",
+      "id": "panel-001",
+      "parent_wall": "wall-001",
+      "start": {
+        "x": 0,
+        "y": 0
+      },
+      "end": {
+        "x": 2400,
+        "y": 0
+      },
+      "length": 2400,
+      "height": 2438,
+      "openings": [],
+      "panel_type": "interior",
+      "load_bearing": false
+    }
+  },
+  "framings": [
+    {
+      "schema_version": "0.1.0",
+      "panel_id": "panel-000",
+      "members": [
+        {
+          "id": "panel-000-m001",
+          "type": "plate",
+          "role": "bottom_plate",
+          "start": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "end": {
+            "x": 3000.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "section": "2x6",
+          "length": 3000.0
+        },
+        {
+          "id": "panel-000-m002",
+          "type": "plate",
+          "role": "top_plate",
+          "start": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 2362.0
+          },
+          "end": {
+            "x": 3000.0,
+            "y": 0.0,
+            "z": 2362.0
+          },
+          "section": "2x6",
+          "length": 3000.0
+        },
+        {
+          "id": "panel-000-m003",
+          "type": "plate",
+          "role": "top_plate",
+          "start": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 2400.0
+          },
+          "end": {
+            "x": 3000.0,
+            "y": 0.0,
+            "z": 2400.0
+          },
+          "section": "2x6",
+          "length": 3000.0
+        },
+        {
+          "id": "panel-000-m004",
+          "type": "stud",
+          "role": "standard_stud",
+          "start": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 38.0
+          },
+          "end": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 2362.0
+          },
+          "section": "2x6",
+          "length": 2324.0
+        },
+        {
+          "id": "panel-000-m005",
+          "type": "stud",
+          "role": "standard_stud",
+          "start": {
+            "x": 400.0,
+            "y": 0.0,
+            "z": 38.0
+          },
+          "end": {
+            "x": 400.0,
+            "y": 0.0,
+            "z": 2362.0
+          },
+          "section": "2x6",
+          "length": 2324.0
+        },
+        {
+          "id": "panel-000-m006",
+          "type": "stud",
+          "role": "standard_stud",
+          "start": {
+            "x": 800.0,
+            "y": 0.0,
+            "z": 38.0
+          },
+          "end": {
+            "x": 800.0,
+            "y": 0.0,
+            "z": 2362.0
+          },
+          "section": "2x6",
+          "length": 2324.0
+        },
+        {
+          "id": "panel-000-m007",
+          "type": "stud",
+          "role": "standard_stud",
+          "start": {
+            "x": 2400.0,
+            "y": 0.0,
+            "z": 38.0
+          },
+          "end": {
+            "x": 2400.0,
+            "y": 0.0,
+            "z": 2362.0
+          },
+          "section": "2x6",
+          "length": 2324.0
+        },
+        {
+          "id": "panel-000-m008",
+          "type": "stud",
+          "role": "standard_stud",
+          "start": {
+            "x": 2800.0,
+            "y": 0.0,
+            "z": 38.0
+          },
+          "end": {
+            "x": 2800.0,
+            "y": 0.0,
+            "z": 2362.0
+          },
+          "section": "2x6",
+          "length": 2324.0
+        },
+        {
+          "id": "panel-000-m009",
+          "type": "stud",
+          "role": "standard_stud",
+          "start": {
+            "x": 3000.0,
+            "y": 0.0,
+            "z": 38.0
+          },
+          "end": {
+            "x": 3000.0,
+            "y": 0.0,
+            "z": 2362.0
+          },
+          "section": "2x6",
+          "length": 2324.0
+        },
+        {
+          "id": "panel-000-m010",
+          "type": "king",
+          "role": "king_stud",
+          "start": {
+            "x": 843.0,
+            "y": 0.0,
+            "z": 38.0
+          },
+          "end": {
+            "x": 843.0,
+            "y": 0.0,
+            "z": 2362.0
+          },
+          "section": "2x6",
+          "length": 2324.0
+        },
+        {
+          "id": "panel-000-m011",
+          "type": "king",
+          "role": "king_stud",
+          "start": {
+            "x": 2157.0,
+            "y": 0.0,
+            "z": 38.0
+          },
+          "end": {
+            "x": 2157.0,
+            "y": 0.0,
+            "z": 2362.0
+          },
+          "section": "2x6",
+          "length": 2324.0
+        },
+        {
+          "id": "panel-000-m012",
+          "type": "jack",
+          "role": "jack_stud",
+          "start": {
+            "x": 881.0,
+            "y": 0.0,
+            "z": 38.0
+          },
+          "end": {
+            "x": 881.0,
+            "y": 0.0,
+            "z": 2138.0
+          },
+          "section": "2x6",
+          "length": 2100.0
+        },
+        {
+          "id": "panel-000-m013",
+          "type": "jack",
+          "role": "jack_stud",
+          "start": {
+            "x": 2119.0,
+            "y": 0.0,
+            "z": 38.0
+          },
+          "end": {
+            "x": 2119.0,
+            "y": 0.0,
+            "z": 2138.0
+          },
+          "section": "2x6",
+          "length": 2100.0
+        },
+        {
+          "id": "panel-000-m014",
+          "type": "header",
+          "role": "header",
+          "start": {
+            "x": 843.0,
+            "y": 0.0,
+            "z": 2138.0
+          },
+          "end": {
+            "x": 2157.0,
+            "y": 0.0,
+            "z": 2138.0
+          },
+          "section": "2x6",
+          "length": 1314.0
+        },
+        {
+          "id": "panel-000-m015",
+          "type": "header",
+          "role": "header",
+          "start": {
+            "x": 843.0,
+            "y": 38.0,
+            "z": 2138.0
+          },
+          "end": {
+            "x": 2157.0,
+            "y": 38.0,
+            "z": 2138.0
+          },
+          "section": "2x6",
+          "length": 1314.0
+        },
+        {
+          "id": "panel-000-m016",
+          "type": "sill",
+          "role": "sill",
+          "start": {
+            "x": 900.0,
+            "y": 0.0,
+            "z": 938.0
+          },
+          "end": {
+            "x": 2100.0,
+            "y": 0.0,
+            "z": 938.0
+          },
+          "section": "2x4",
+          "length": 1200.0
+        },
+        {
+          "id": "panel-000-m017",
+          "type": "cripple",
+          "role": "cripple_stud",
+          "start": {
+            "x": 1200.0,
+            "y": 0.0,
+            "z": 38.0
+          },
+          "end": {
+            "x": 1200.0,
+            "y": 0.0,
+            "z": 900.0
+          },
+          "section": "2x6",
+          "length": 862.0
+        },
+        {
+          "id": "panel-000-m018",
+          "type": "cripple",
+          "role": "cripple_stud",
+          "start": {
+            "x": 1600.0,
+            "y": 0.0,
+            "z": 38.0
+          },
+          "end": {
+            "x": 1600.0,
+            "y": 0.0,
+            "z": 900.0
+          },
+          "section": "2x6",
+          "length": 862.0
+        },
+        {
+          "id": "panel-000-m019",
+          "type": "cripple",
+          "role": "cripple_stud",
+          "start": {
+            "x": 2000.0,
+            "y": 0.0,
+            "z": 38.0
+          },
+          "end": {
+            "x": 2000.0,
+            "y": 0.0,
+            "z": 900.0
+          },
+          "section": "2x6",
+          "length": 862.0
+        },
+        {
+          "id": "panel-000-m020",
+          "type": "cripple",
+          "role": "cripple_stud",
+          "start": {
+            "x": 1200.0,
+            "y": 0.0,
+            "z": 2278.0
+          },
+          "end": {
+            "x": 1200.0,
+            "y": 0.0,
+            "z": 2362.0
+          },
+          "section": "2x6",
+          "length": 84.0
+        },
+        {
+          "id": "panel-000-m021",
+          "type": "cripple",
+          "role": "cripple_stud",
+          "start": {
+            "x": 1600.0,
+            "y": 0.0,
+            "z": 2278.0
+          },
+          "end": {
+            "x": 1600.0,
+            "y": 0.0,
+            "z": 2362.0
+          },
+          "section": "2x6",
+          "length": 84.0
+        },
+        {
+          "id": "panel-000-m022",
+          "type": "cripple",
+          "role": "cripple_stud",
+          "start": {
+            "x": 2000.0,
+            "y": 0.0,
+            "z": 2278.0
+          },
+          "end": {
+            "x": 2000.0,
+            "y": 0.0,
+            "z": 2362.0
+          },
+          "section": "2x6",
+          "length": 84.0
+        }
+      ],
+      "member_count": 22
+    },
+    {
+      "schema_version": "0.1.0",
+      "panel_id": "panel-001",
+      "members": [
+        {
+          "id": "panel-001-m001",
+          "type": "plate",
+          "role": "bottom_plate",
+          "start": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "end": {
+            "x": 2400.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "section": "2x4",
+          "length": 2400.0
+        },
+        {
+          "id": "panel-001-m002",
+          "type": "plate",
+          "role": "top_plate",
+          "start": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 2362.0
+          },
+          "end": {
+            "x": 2400.0,
+            "y": 0.0,
+            "z": 2362.0
+          },
+          "section": "2x4",
+          "length": 2400.0
+        },
+        {
+          "id": "panel-001-m003",
+          "type": "plate",
+          "role": "top_plate",
+          "start": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 2400.0
+          },
+          "end": {
+            "x": 2400.0,
+            "y": 0.0,
+            "z": 2400.0
+          },
+          "section": "2x4",
+          "length": 2400.0
+        },
+        {
+          "id": "panel-001-m004",
+          "type": "stud",
+          "role": "standard_stud",
+          "start": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 38.0
+          },
+          "end": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 2362.0
+          },
+          "section": "2x4",
+          "length": 2324.0
+        },
+        {
+          "id": "panel-001-m005",
+          "type": "stud",
+          "role": "standard_stud",
+          "start": {
+            "x": 400.0,
+            "y": 0.0,
+            "z": 38.0
+          },
+          "end": {
+            "x": 400.0,
+            "y": 0.0,
+            "z": 2362.0
+          },
+          "section": "2x4",
+          "length": 2324.0
+        },
+        {
+          "id": "panel-001-m006",
+          "type": "stud",
+          "role": "standard_stud",
+          "start": {
+            "x": 800.0,
+            "y": 0.0,
+            "z": 38.0
+          },
+          "end": {
+            "x": 800.0,
+            "y": 0.0,
+            "z": 2362.0
+          },
+          "section": "2x4",
+          "length": 2324.0
+        },
+        {
+          "id": "panel-001-m007",
+          "type": "stud",
+          "role": "standard_stud",
+          "start": {
+            "x": 1200.0,
+            "y": 0.0,
+            "z": 38.0
+          },
+          "end": {
+            "x": 1200.0,
+            "y": 0.0,
+            "z": 2362.0
+          },
+          "section": "2x4",
+          "length": 2324.0
+        },
+        {
+          "id": "panel-001-m008",
+          "type": "stud",
+          "role": "standard_stud",
+          "start": {
+            "x": 1600.0,
+            "y": 0.0,
+            "z": 38.0
+          },
+          "end": {
+            "x": 1600.0,
+            "y": 0.0,
+            "z": 2362.0
+          },
+          "section": "2x4",
+          "length": 2324.0
+        },
+        {
+          "id": "panel-001-m009",
+          "type": "stud",
+          "role": "standard_stud",
+          "start": {
+            "x": 2000.0,
+            "y": 0.0,
+            "z": 38.0
+          },
+          "end": {
+            "x": 2000.0,
+            "y": 0.0,
+            "z": 2362.0
+          },
+          "section": "2x4",
+          "length": 2324.0
+        },
+        {
+          "id": "panel-001-m010",
+          "type": "stud",
+          "role": "standard_stud",
+          "start": {
+            "x": 2400.0,
+            "y": 0.0,
+            "z": 38.0
+          },
+          "end": {
+            "x": 2400.0,
+            "y": 0.0,
+            "z": 2362.0
+          },
+          "section": "2x4",
+          "length": 2324.0
+        }
+      ],
+      "member_count": 10
+    }
+  ]
+}
